@@ -1,5 +1,10 @@
-function checkForm() {
-   // TODO: Perform input validation 
+function checkForm(e) {
+   e.preventDefault();
+   let fullNameInput = document.getElementById("fullName");
+   let errorSpan = fullNameInput.previousElementSibling;
+   let outputP = document.getElementById("tryCatchOutput");
+   errorSpan.innerHTML = "";
+   outputP.innerHTML = "";
 }
 
 document.getElementById("submit").addEventListener("click", function(event) {
