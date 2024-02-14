@@ -5,6 +5,12 @@ function checkForm(e) {
    let outputP = document.getElementById("tryCatchOutput");
    errorSpan.innerHTML = "";
    outputP.innerHTML = "";
+
+   try{
+      if(fullNameInput.value == ""){
+         throw 
+      }
+   }
 }
 
 document.getElementById("submit").addEventListener("click", function(event) {
